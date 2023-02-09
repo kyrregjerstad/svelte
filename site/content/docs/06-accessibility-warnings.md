@@ -43,9 +43,9 @@ Enforce that `autofocus` is not used on elements. Autofocusing elements can caus
 
 ### `a11y-click-events-have-key-events`
 
-Enforce `on:click` is accompanied by at least one of the following: `onKeyUp`, `onKeyDown`, `onKeyPress`. Coding for the keyboard is important for users with physical disabilities who cannot use a mouse, AT compatibility, and screenreader users. 
+Enforce `on:click` is accompanied by at least one of the following: `onKeyUp`, `onKeyDown`, `onKeyPress`. Coding for the keyboard is important for users with physical disabilities who cannot use a mouse, AT compatibility, and screen reader users.
 
-This does not apply for interactive or hidden elements.
+This does not apply to interactive or hidden elements.
 
 ```sv
 <!-- A11y: visible, non-interactive elements with an on:click event must be accompanied by an on:keydown, on:keyup, or on:keypress event. -->
@@ -56,7 +56,7 @@ This does not apply for interactive or hidden elements.
 
 ### `a11y-distracting-elements`
 
-Enforces that no distracting elements are used. Elements that can be visually distracting can cause accessibility issues with visually impaired users. Such elements are most likely deprecated, and should be avoided.
+Enforces that no distracting elements are used. Elements that can be visually distracting can cause accessibility issues for visually impaired users. Such elements are most likely deprecated and should be avoided.
 
 The following elements are visually distracting: `<marquee>` and `<blink>`.
 
