@@ -91,7 +91,7 @@ You can use reserved words as prop names.
 
 ---
 
-To change component state and trigger a re-render, just assign to a locally declared variable.
+To change the component state and trigger a re-render, just assign it to a locally declared variable.
 
 Update expressions (`count += 1`) and property assignments (`obj.x = y`) have the same effect.
 
@@ -350,7 +350,7 @@ To apply styles to a selector globally, use the `:global(...)` modifier.
 
 If you want to make @keyframes that are accessible globally, you need to prepend your keyframe names with `-global-`.
 
-The `-global-` part will be removed when compiled, and the keyframe then be referenced using just `my-animation-name` elsewhere in your code.
+The `-global-` part will be removed when compiled, and the keyframe can then be referenced using just `my-animation-name` elsewhere in your code.
 
 ```html
 <style>
